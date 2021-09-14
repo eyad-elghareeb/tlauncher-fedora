@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=TLauncher
+Keywords=game;strategy;
+Comment=Minecraft is a sandbox video game developed by Mojang
+Icon=tlauncher
+Exec=tlauncher
+Terminal=false
+StartupNotify=false
+Categories=Game;AdventureGame;
