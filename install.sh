@@ -17,6 +17,7 @@ sudo wget https://tlauncher.org/jar -P src/
 unzip src/jar -d src/tlauncher.d
 mv src/tlauncher.d/*.jar src/tlauncher.d/tlauncher.jar
 
+sudo mkdir /usr/share/tlauncher
 sudo mv src/tlauncher.d/* /usr/share/tlauncher
 sudo mv src/tlauncher.desktop /usr/share/applications
 sudo mv src/tlauncher /usr/bin/
