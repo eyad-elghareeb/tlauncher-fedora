@@ -19,5 +19,6 @@ mv src/tlauncher.d/*.jar src/tlauncher.d/tlauncher.jar
 
 sudo mkdir /usr/share/tlauncher
 sudo mv src/tlauncher.d/* /usr/share/tlauncher
+sudo mv src/tlauncher.png /usr/share/icons
 sudo mv src/tlauncher.desktop /usr/share/applications
 sudo mv src/tlauncher /usr/bin/
