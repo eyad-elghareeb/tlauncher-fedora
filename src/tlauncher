@@ -1,2 +1,22 @@
 #!/bin/bash
-java -jar /usr/share/tlauncher/tlauncher.jar
+
+function update() {
+  wget https://tlauncher.org/jar -P /tmp
+  unzip /tmp/jar -d /tmp/tlauncher
+  sudo mv /tmp/tlauncher/*.jar /usr/share/tlauncher/tlauncher.jar
+  rm /tmp/jar
+  rm -rf /tmp/tlauncher/
+}
+
+
+while [[ "$1" ]]; do
+  case "$1" in
+    "--update" | "-u")
+      update 
+      ;;
+    *)
+      java -jar /usr/share/tlauncher/tlauncher.jar
+      ;;
+  esac
+  shift
+done
