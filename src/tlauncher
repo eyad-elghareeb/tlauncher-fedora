@@ -8,15 +8,26 @@ function update() {
   rm -rf /tmp/tlauncher/
 }
 
+function usage() {
+  echo "
+  Usage:
+    --update -u | Update tlauncher.jar
+    nothing     | Launch TLauncher
+  "
+}
+
 
 while [[ "$1" ]]; do
   case "$1" in
     "--update" | "-u")
-      update 
+      update ; exit
       ;;
     *)
-      java -jar /usr/share/tlauncher/tlauncher.jar
+      usage ; exit
       ;;
   esac
   shift
 done
+
+
+java -jar /usr/share/tlauncher/tlauncher.jar
