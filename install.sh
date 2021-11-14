@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if ! pacman -Qs | grep -q wget; then
+	sudo pacman -S --noconfirm wget
+fi
+
 java=(
 	jdk-openjdk
 	jre-openjdk
