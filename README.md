@@ -3,11 +3,15 @@ This is a repo that i made to install TLauncher on Arch Linux directly from thei
 
 ## How to install
 
-1. Change the permissions of the script
+1. Clone and enter the repo
+    ```c 
+    git clone https://github.com/MatheusTT/tlauncher-arch.git && cd tlauncher-arch
+    ```
+2. Change the permissions of the script
     ```c 
     chmod +x ./install.sh
     ```
-2. Install tlauncher
+3. Install tlauncher
     ```c
     ./install.sh
     ```
