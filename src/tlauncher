@@ -1,11 +1,13 @@
 #!/bin/bash
 
 function update() {
+  echo -e "\n\033[1;32mDownloading the latest version...\033[0m"
   wget https://tlauncher.org/jar -P /tmp
   unzip /tmp/jar -d /tmp/tlauncher
   sudo mv /tmp/tlauncher/*.jar /usr/share/tlauncher/tlauncher.jar
   rm /tmp/jar
   rm -rf /tmp/tlauncher/
+  echo -e "\n\033[1;32mDone!\033[0m"
 }
 
 function usage() {
@@ -20,13 +22,10 @@ function usage() {
 while [[ "$1" ]]; do
   case "$1" in
     "--update" | "-u")
-      update ; exit
-      ;;
+      update ; exit ;;
     *)
-      usage ; exit
-      ;;
+      usage ; exit ;;
   esac
-  shift
 done
 
 
