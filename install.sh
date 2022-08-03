@@ -5,16 +5,17 @@
 ## (They use java 8, but instead i'm installing the most recent java version).
 pkgs_needed=(
 	wget
-	jdk-openjdk
-	jre-openjdk
-	jre-openjdk-headless
-	java-openjfx
+	java-latest-openjdk
+    java-latest-openjdk-devel
+    java-latest-openjdk-headless
+
 )
 
 for pkg in ${pkgs_needed[@]} ; do
-	if ( ! pacman -Qs | grep -q $pkg ) ; then
-		sudo pacman -S --noconfirm "$pkg"
-	fi
+        if ( ! dnf list installed | grep -q $pkg ) ; then
+                sudo dnf -y install "$pkg"
+        fi
+
 done
 
 # Downloading TLauncher

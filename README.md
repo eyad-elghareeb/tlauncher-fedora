@@ -5,7 +5,7 @@ This is a repo that i made to install TLauncher on Arch Linux directly from thei
 
 1. Clone and enter the repo
     ```c 
-    git clone https://github.com/MatheusTT/tlauncher-arch.git && cd tlauncher-arch
+    git clone https://github.com/eyad-elghareeb/tlauncher-fedora.git && cd tlauncher-fedora
     ```
 2. Change the permissions of the script
     ```c 
