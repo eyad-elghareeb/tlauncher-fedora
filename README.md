@@ -1,5 +1,5 @@
 # TLauncher
-This is a repo that i made to install TLauncher on Arch Linux directly from their [site](https://tlauncher.org/).
+This is a repo that i made to install TLauncher on fedora Linux directly from their [site](https://tlauncher.org/).
 
 ## How to install
 
